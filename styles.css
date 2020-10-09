@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(38, 40, 41);
+  color: rgb(170, 170, 170);
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(170, 170, 170);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-entry {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.todo-container {
+  width: 100%;
+  margin-top: 20px;
+  border: solid purple 1px;
+}
+
+.todo-item .holder {
+  display: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+  border-bottom: dotted yellowgreen 0.5px;
+}
+
+button {
+  background-color: #336e4c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.del-btn {
+  background-color: tomato;
+}
+
+input {
+  width: 70%;
+  background-color: #336e4c;
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
