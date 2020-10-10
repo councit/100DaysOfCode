@@ -13,18 +13,26 @@ function handleSubmit() {
   let delBtn = document.createElement('button');
   let itemSpan = document.createElement('SPAN');
 
-  itemSpan.innerHTML = todoItemValue;
+  if (todoItemValue === '' ) {
+    entrySelector.value = 'Please enter an Item'
+    
 
-  div.className = 'todo-item';
+  }else {
+    itemSpan.innerHTML = todoItemValue;
 
-  delBtn.className = 'del-btn';
-  delBtn.innerHTML = 'Delete Item';
+    div.className = 'todo-item';
+  
+    delBtn.className = 'del-btn';
+    delBtn.innerHTML = 'Delete Item';
+  
+    div.appendChild(itemSpan);
+  
+    todoContainer.appendChild(div).appendChild(delBtn);
+  
+    entrySelector.value = '';
+  }
 
-  div.appendChild(itemSpan);
 
-  todoContainer.appendChild(div).appendChild(delBtn);
-
-  entrySelector.value = '';
 }
 
 //event listeners
