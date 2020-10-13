@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(218, 218, 218);
+  color: rgb(54, 54, 54);
+  font-size: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item {
+  margin: 10px;
+}
