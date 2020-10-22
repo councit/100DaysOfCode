@@ -52,15 +52,8 @@ footer {
 
 .aside-img {
   display: none;
-  border-radius: 5px;
-  width: 100%;
-  margin: 10px 0px 10px 10px;
 }
 
 .mobile-text {
   text-align: center;
-}
-
-.article-3 {
-  display: none;
 }

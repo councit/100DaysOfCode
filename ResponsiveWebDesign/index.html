@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link media="(min-width: 650px)" rel="stylesheet" href="./med-style.css" />
+    <link media="(min-width: 850px)" rel="stylesheet" href="./lg-style.css" />
+    <link media="(min-width: 1000px)" rel="stylesheet" href="./max-style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -11,13 +16,15 @@
     <title>Responsive Web Design</title>
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="page-title">Responsive Web Design</h1>
-    </header>
-    <main>
+    <div class="grid-wrapper">
+      <header class="page-header">
+        <h1 class="page-title min">Responsive Web Design</h1>
+      </header>
+      <div class="mobile-text">Mobile Layout</div>
+
       <article>
-        <h2 class="note-title">Notes</h2>
-        <p class="notes">
+        <h2 class="article-title article-1">Article 1</h2>
+        <p class="article-text article-1-text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero sit,
           voluptatum earum ullam repellat harum! Voluptates voluptate eius
           earum. Quis eaque reprehenderit exercitationem vitae consectetur! Quia
@@ -26,6 +33,46 @@
           beatae voluptatem perspiciatis consequatur!
         </p>
       </article>
-    </main>
+      <article class="article-2">
+        <h2 class="article-title article-2">Article 2</h2>
+        <p class="article-text article-2-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero sit,
+          voluptatum earum ullam repellat harum! Voluptates voluptate eius
+          earum. Quis eaque reprehenderit exercitationem vitae consectetur! Quia
+          ea dolorum voluptate, porro repellendus delectus saepe, eius ut quae
+          ipsum deserunt ipsam, aperiam eaque. Vero debitis architecto in quas
+          beatae voluptatem perspiciatis consequatur!
+        </p>
+      </article>
+      <article class="article-3">
+        <h2 class="article-title article-3">Article 3</h2>
+        <p class="article-text article-3-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero sit,
+          voluptatum earum ullam repellat harum! Voluptates voluptate eius
+          earum. Quis eaque reprehenderit exercitationem vitae consectetur! Quia
+          ea dolorum voluptate, porro repellendus delectus saepe, eius ut quae
+          ipsum deserunt ipsam, aperiam eaque. Vero debitis architecto in quas
+          beatae voluptatem perspiciatis consequatur!
+        </p>
+      </article>
+
+      <aside>
+        <img
+          src="https://picsum.photos/200/600"
+          alt="test add image"
+          class="aside-img"
+        />
+      </aside>
+      <footer>
+        <h3 class="footer-text">Design's By Taylor</h3>
+        <nav class="footer-nav">
+          <ul class="footer-links">
+            <li class="footer-link">Twitter</li>
+            <li class="footer-link">LinkedIn</li>
+            <li class="footer-link">FaceBook</li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,43 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header'
+    'article-1 aside'
+    'article-2 aside'
+    'article-3 article-3'
+    'footer footer';
+}
+
+header {
+  grid-area: header;
+}
+
+.article-1 {
+  grid-area: article-1;
+}
+.article-2 {
+  grid-area: article-2;
+}
+.article-3 {
+  grid-area: article-3;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.mobile-text {
+  display: none;
+}
+
+.article-3 {
+  display: flex;
+}
