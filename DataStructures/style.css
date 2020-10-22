@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #66bb6a;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #263238;
+  margin: 0 10%;
+}
+
+main {
+  margin: 50px 0;
+}
+
+.page-header {
+  background-color: #66bb6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.page-header-title {
+  color: #263238;
+  font-size: 3rem;
+}

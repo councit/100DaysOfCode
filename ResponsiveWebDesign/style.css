@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fafafa;
+  background-color: #263238;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #673AB7;
+}
+
+article {
+  background-color: #607D8B;
+}
